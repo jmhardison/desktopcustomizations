@@ -44,3 +44,10 @@ Set fish color to dracula
 Install kvm and tools
 - `sudo apt install qemu-kvm bridge-utils`
 - `sudo adduser <username> kvm`
+
+### Yubikey Luks Modifications
+- `sudo apt-get install yubikey-personalization`
+- `sudo yubikey-luks-enroll -d /dev/sda3 -s 7`
+- Modify `/etc/crypttab` to have script appended.
+  - `luks,keyscript=/usr/share/yubikey-luks/ykluks-keyscript,discard`
+- `systemctl enable yubikey-luks-suspend.service`
