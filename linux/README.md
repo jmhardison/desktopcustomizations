@@ -6,7 +6,10 @@ Generally in Linux, I run Manjaro on my desktop. These tweaks are not meant for 
 
 Install fish from:
 
-- `sudo pacman -Syyu fish`
+- Manjaro: `sudo pacman -Syyu fish`
+- Ubuntu: `sudo apt-add-repository ppa:fish-shell/release-3`
+  - `sudo apt update`
+  - `sudo apt install fish`
 - `chsh -s /usr/bin/fish`
 
 Install Oh My Fish from:
@@ -24,14 +27,19 @@ Install Nerd Fonts from:
 
     or
 
-- Obtain `nerd-fonts-complete` from AUR.
+- Manjaro: Obtain `nerd-fonts-complete` from AUR.
 
 Install MTR if not already:
 
-- `sudo pacman -Syyu mtr`
+- Manjaro: `sudo pacman -Syyu mtr`
+- Ubuntu: `sudo apt install mtr`
 
 Set fish color to dracula
 
 - `set theme_color_scheme dracula`
 - `fish_config` set colors to dracula
 
+### Install Components for Android Studio
+
+Install kvm and tools
+- `sudo apt install qemu-kvm bridge-utils`
