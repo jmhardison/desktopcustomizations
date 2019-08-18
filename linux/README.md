@@ -43,3 +43,4 @@ Set fish color to dracula
 
 Install kvm and tools
 - `sudo apt install qemu-kvm bridge-utils`
+- `sudo adduser <username> kvm`
