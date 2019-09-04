@@ -51,3 +51,16 @@ Install kvm and tools
 - Modify `/etc/crypttab` to have script appended.
   - `luks,keyscript=/usr/share/yubikey-luks/ykluks-keyscript,discard`
 - `systemctl enable yubikey-luks-suspend.service`
+
+### Yubikey GPG import and SSH enablement
+- `gpg --keyserver keyserver.ubuntu.com --recv 62056042a03a3659ecc25c275cb770bf020e6336`
+- set to ultimate trust
+- unlock features of card
+- enable ssh key support
+```
+  sudo killall gpg-agent
+  sudo killall ssh-agent
+  # note: eval is used because the produced STDOUT is a bunch of ENV settings
+  eval $( gpg-agent --daemon --enable-ssh-support )
+  ssh-add -L
+```
