@@ -58,10 +58,17 @@ Install kvm and tools
 - set to ultimate trust
 - unlock features of card
 - enable ssh key support
-```
+```console
   sudo killall gpg-agent
   sudo killall ssh-agent
   # note: eval is used because the produced STDOUT is a bunch of ENV settings
   eval $( gpg-agent --daemon --enable-ssh-support )
   ssh-add -L
+```
+Add these to the shell `rc` file:
+
+```console
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye > /dev/null
 ```
