@@ -49,8 +49,9 @@ Install kvm and tools
 - `sudo apt-get install yubikey-personalization`
 - `sudo yubikey-luks-enroll -d /dev/sda3 -s 7`
 - Modify `/etc/crypttab` to have script appended.
-  - `luks,keyscript=/usr/share/yubikey-luks/ykluks-keyscript,discard`
+  - `luks,keyscript=/usr/share/yubikey-luks/ykluks-keyscript`
 - `systemctl enable yubikey-luks-suspend.service`
+- `sudo update-initramfs -u`
 
 ### Yubikey GPG import and SSH enablement
 - `gpg --keyserver keyserver.ubuntu.com --recv 62056042a03a3659ecc25c275cb770bf020e6336`
