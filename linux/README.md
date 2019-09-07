@@ -72,3 +72,7 @@ export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 gpg-connect-agent updatestartuptty /bye > /dev/null
 ```
+
+### Git Commit Signing
+- `git config --global user.signingkey 5CB770BF020E6336`
+- `git config --global commit.gpgsign true`
