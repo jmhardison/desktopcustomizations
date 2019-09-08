@@ -7,6 +7,7 @@ Generally in Linux, I run Manjaro on my desktop. These tweaks are not meant for 
 - Yubico : `sudo add-apt-repository ppa:yubico/stable`
 - Openrazer : `sudo add-apt-repository ppa:openrazer/stable`
 - Polychromatic : `sudo add-apt-repository ppa:polychromatic/stable`
+- OBS Project : `sudo add-apt-repository ppa:obsproject/obs-studio`
 
 
 ### Fish Shell
