@@ -2,6 +2,11 @@
 
 Generally in Linux, I run Manjaro on my desktop. These tweaks are not meant for the servers I work on.
 
+### Useful PPA's
+- Git Maintainers : `systemctl enable yubikey-luks-suspend.service`
+- Yubico : `sudo add-apt-repository ppa:yubico/stable`
+
+
 ### Fish Shell
 
 Install fish from:
