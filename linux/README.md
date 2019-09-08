@@ -3,7 +3,7 @@
 Generally in Linux, I run Manjaro on my desktop. These tweaks are not meant for the servers I work on.
 
 ### Useful PPA's
-- Git Maintainers : `systemctl enable yubikey-luks-suspend.service`
+- Git Maintainers : `sudo add-apt-repository ppa:git-core/ppa`
 - Yubico : `sudo add-apt-repository ppa:yubico/stable`
 
 
