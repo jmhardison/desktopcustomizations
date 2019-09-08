@@ -52,7 +52,7 @@ Install kvm and tools
 
 ### Yubikey Luks Modifications
 - `sudo add-apt-repository ppa:yubico/stable`
-- `sudo apt-get install yubikey-personalization yubikey-luks libpam-yubico`
+- `sudo apt-get install yubikey-personalization yubikey-luks libpam-yubico scdaemon`
 - `sudo yubikey-luks-enroll -d /dev/sda3 -s 7`
 - Modify `/etc/crypttab` to have script appended.
   - `luks,keyscript=/usr/share/yubikey-luks/ykluks-keyscript`
