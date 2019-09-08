@@ -5,6 +5,8 @@ Generally in Linux, I run Manjaro on my desktop. These tweaks are not meant for 
 ### Useful PPA's
 - Git Maintainers : `sudo add-apt-repository ppa:git-core/ppa`
 - Yubico : `sudo add-apt-repository ppa:yubico/stable`
+- Openrazer : `sudo add-apt-repository ppa:openrazer/stable`
+- Polychromatic : `sudo add-apt-repository ppa:polychromatic/stable`
 
 
 ### Fish Shell
