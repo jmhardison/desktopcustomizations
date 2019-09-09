@@ -82,6 +82,13 @@ export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 gpg-connect-agent updatestartuptty /bye > /dev/null
 ```
 
+Fish shell may require:
+
+```console
+set -x GPG_TTY `(tty)`
+set -x SSH_AUTH_SOCK /run/user/`(UID)`/gnupg/S.gpg-agent.ssh
+```
+
 ### Git Commit Signing
 - `git config --global user.signingkey 5CB770BF020E6336`
 - `git config --global commit.gpgsign true`
